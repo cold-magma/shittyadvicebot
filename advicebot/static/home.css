@@ -1,0 +1,90 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+body{
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	background: #000000;
+}
+#logo{
+	width: 80%;
+	color:white;
+	cursor: default;
+}
+nav{
+	width: 80%;
+	display: flex;
+
+	align-items: center;
+	flex-direction: row
+	justify-content: space-around;
+}
+h1{
+	font-family: 'VT323', monospace;
+	font-size: 32px;
+	font-weight: bolder;
+}
+p{
+	font-family: 'VT323', monospace;
+	font-size: 16px;
+}
+.about{
+	width: 20%;
+	align-items: center;
+	justify-content: space-around;
+	display: flex;
+}
+#content{
+	width: 80%;
+	height: 80vh;
+	font-family: 'VT323', monospace;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.links{
+	font-family: 'VT323', monospace;
+	font-size: 16px;
+	color: white;
+	text-decoration:none;
+	text-align: center;
+	background:black;
+	border:none;
+	width: 30%;
+	height: 100%;
+	padding:10px;
+	transition: all 1s ease;
+}
+.links:hover{
+	text-decoration: underline;
+}
+#advice{
+  	display: inline;
+  	overflow-wrap: normal;
+  	font-size: 20px;
+}
+span{
+	display: inline;
+}
+#cursor{
+	animation: blink 0.5s infinite;
+}
+@keyframes blink{
+	0%{
+		opacity:1;
+	}
+	100%{
+		opacity:0;
+	}
+}
+@media (max-width:1000px){
+
+   #content{
+   	width: 70%;
+   }
+}
