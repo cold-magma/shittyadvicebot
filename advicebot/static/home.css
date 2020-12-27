@@ -40,12 +40,40 @@ p{
 }
 #content{
 	width: 80%;
-	height: 80vh;
+	height: 60vh;
 	font-family: 'VT323', monospace;
 	color: white;
 	display: flex;
 	align-items: center;
 	justify-content: space-around;
+}
+#more{
+	width: 80%;
+	height: 20vh;
+	font-family: 'VT323', monospace;
+	color: white;
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	flex-direction: column;
+}
+#more_message{
+	font-family: 'VT323', monospace;
+	font-size: 20px;
+	color: white;
+}
+#more_btn{
+	font-family: 'VT323', monospace;
+	color: white;
+	background: black;
+	border:none;
+	padding: 5px;
+	font-size: 20px;
+	transition: all 0.3s ease;
+}
+#more_btn:hover{
+	background: white;
+	color: black;
 }
 .links{
 	font-family: 'VT323', monospace;
