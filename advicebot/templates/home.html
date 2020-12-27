@@ -39,9 +39,18 @@
 					count = 2;
 					document.getElementById('more_message').innerHTML = 'Seriously? I just said no.';				
 				}
+				else if(count==2){
+					count = 3;
+					document.getElementById('more_message').innerHTML = 'Fine! here...<a class="links" href="https://youtu.be/dQw4w9WgXcQ">MORE ADVICE</a>';
+				}
+				else if(count==3){
+					count = 4;
+					document.getElementById('more_btn').innerHTML = 'Don\'t click me again please I beg you';
+					document.getElementById('more_message').innerHTML = 'Fine! here...<a class="links" href="https://youtu.be/dQw4w9WgXcQ">MORE ADVICE</a> Tou\'re still here? Why?';
+				}
 				else{
 					count = 0;
-					document.getElementById('more_message').innerHTML = 'Fine! here...<a class="links" href="https://youtu.be/dQw4w9WgXcQ">MORE ADVICE</a>';
+					window.location.replace("https://shittyadvicebot.herokuapp.com/");
 				}
 			});
 		});
