@@ -94,7 +94,7 @@ p{
 #rick_roll{
 	background: white;
 	color: block;
-	animation: flash 2s infinite;
+	animation: flash 1.5s infinite;
 }
 #advice{
   	display: inline;
@@ -106,6 +106,7 @@ span{
 }
 #cursor{
 	animation: blink 0.5s infinite;
+	padding: 1px;
 }
 @keyframes blink{
 	0%{
@@ -120,10 +121,15 @@ span{
 		background: black;
 		color:white;
 	}
-	100%{
+	50%{
 		background: white;
 		color:black;
 	}
+	100%{
+		background: black;
+		color:white;
+	}
+
 }
 @media (max-width:1000px){
 
