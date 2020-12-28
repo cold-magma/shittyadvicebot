@@ -91,6 +91,11 @@ p{
 .links:hover{
 	text-decoration: underline;
 }
+#rick_roll{
+	background: white;
+	color: block;
+	animation: flash 2s infinite;
+}
 #advice{
   	display: inline;
   	overflow-wrap: normal;
@@ -108,6 +113,16 @@ span{
 	}
 	100%{
 		opacity:0;
+	}
+}
+@keyframes flash{
+	0%{
+		background: black;
+		color:white;
+	}
+	100%{
+		background: white;
+		color:black;
 	}
 }
 @media (max-width:1000px){
